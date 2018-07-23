@@ -1,0 +1,36 @@
+.detail-wrapper{
+    display: grid;
+    margin:auto;
+}
+img{
+    margin: auto;
+    width: 15em;
+  }
+.title{
+    margin:auto;
+    padding: 5% 5% 0 5%;
+}
+.detail{
+    padding: 0 5%;
+}
+.date{
+    padding: 0 5%;
+}
+button{
+    margin:2%;
+    padding: auto;
+}
+.headline{
+    margin: auto; 
+}
+form{
+    display: grid;
+    margin:auto;
+}
+form [name=detail]{
+    height:30px;
+}
+form input{
+    padding: 2%;
+}
+

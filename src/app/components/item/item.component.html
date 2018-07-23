@@ -1,0 +1,27 @@
+<div class="detail-wrapper" *ngIf="id !== -1">
+  <h3 class="title">{{currentItem.title}}</h3>
+  <img src="{{currentItem.image}}" onError="this.src = '../assets/image-icon.png'">
+  <div class="detail">Details: 
+    <p>{{currentItem.detail}}</p>
+  </div>
+  <p class="date">Created Date: {{currentItem.date}}</p>
+  <button routerLink="">Go Back</button>
+</div>
+
+<div class="detail-wrapper" *ngIf="id === -1">
+  <div class="headline">Please enter note information:</div>
+  <form onsubmit="return false">
+    Title:<br>
+    <input type="text" #title class="note-title">
+    <br>
+    Detail:<br>
+    <textarea class="note-detail" #detail placeholder="please enter notes" rows="4" cols="50"></textarea>
+    <br>
+    Attached Image path:<br>
+    <input type="text" class="note-image" #image>
+    <br>
+    <input type="submit" value="Submit" 
+    (click)="StoreData(title.value, detail.value, image.value)" 
+    routerLink="">
+  </form>
+</div>

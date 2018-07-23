@@ -1,0 +1,24 @@
+body {
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px; 
+}
+
+  .container {
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 400px;
+    background: white;
+    padding: 0% 10%;
+    box-sizing: border-box;
+  }
+  
+  .todo-wrapper {
+    background: rgb(240, 240, 240);
+    margin: 20px auto 20px auto;
+    border: 0.1rem solid rgb(240, 240, 240);
+    border-radius: 0.5rem;
+  }
+
+
+ 
